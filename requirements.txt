@@ -1,0 +1,6 @@
+#requirement.txt
+ccxt==1.57.64
+time
+logging
+os
+python-telegram-bot==13.7

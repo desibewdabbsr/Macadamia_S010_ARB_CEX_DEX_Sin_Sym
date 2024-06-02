@@ -48,7 +48,7 @@ fees = {
 }
 
 
-# Initialize exchanges (replace with your actual API keys)
+# Initialize exchanges 
 exchanges = [
     ccxt.binance({'apiKey': BINANCE_API_KEY, 'secret': BINANCE_SECRET_KEY}),
     ccxt.kucoin({'apiKey': KUCOIN_API_KEY, 'secret': KUCOIN_SECRET_KEY}),
@@ -73,7 +73,8 @@ renew_time_minutes = 30
 def get_balance(exchange):
     balance = exchange.fetch_balance()
     return balance['total']['USDT']
-
+    
+# Arbitrage Function.
 def execute_arbitrage():
     while True:
         try:

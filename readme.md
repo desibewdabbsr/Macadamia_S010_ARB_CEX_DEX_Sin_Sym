@@ -1,4 +1,4 @@
-# Macadamia_ARB_S010 CEX-DEX Arbitrage Bot
+# Macadamia_S010_ARB_CEX_DEX_Sin_Sym BOT
 
   # Executes Macadamia arbitrage opportunities by continuously fetching balances and prices from multiple 30+ exchanges.
 

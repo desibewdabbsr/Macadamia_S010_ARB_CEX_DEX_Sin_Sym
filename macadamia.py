@@ -1,4 +1,3 @@
-# Macadamia.py
 import ccxt
 import time
 import logging
@@ -29,7 +28,6 @@ from exchange_config import (
     XT_API_KEY, 
     XT_SECRET_KEY
 )
-   
 
 # Exchanges fees Configuration
 fees = {
@@ -47,7 +45,6 @@ fees = {
     'xt': {'base': 0, 'quote': 0.001},
 }
 
-
 # Initialize exchanges 
 exchanges = [
     ccxt.binance({'apiKey': BINANCE_API_KEY, 'secret': BINANCE_SECRET_KEY}),
@@ -64,7 +61,7 @@ exchanges = [
     ccxt.xt({'apiKey': XT_API_KEY, 'secret': XT_SECRET_KEY}),
 ]
 
- # Define the symbols and timeframes
+# Define the symbols and timeframes
 symbol = 'BTC/USDT'
 initial_balance_usdt = 1000
 renew_time_minutes = 30
@@ -103,6 +100,3 @@ def execute_arbitrage():
 
 if __name__ == '__main__':
     execute_arbitrage()
-
-
-
